@@ -6,16 +6,16 @@
 </head>
 
 <body>
-    <h1>Contact Forms</h1>
+    <h1 class="contact">Contact Forms</h1>
 
     <table>
         <tr>
             <th>
                 <form action="./save_contact.php" method="get">
-                    <p>Username:
+                    <p class="user">Username:
                         <input type="text" name="Username" size="15" maxlength="30" />
                     </p>
-                    <p>Password:
+                    <p class="pswrd">Password:
                         <input type="password" name="password" size="15" maxlength="30" />
                     </p>
                 </form>
@@ -25,7 +25,7 @@
         </tr>
         <th>
             <form action="./save_contact.php" method="get">
-                <p>What Genre is your favorite?</p>
+                <p class="genre">What Genre is your favorite?</p>
                 <select name="Genre">
                     <option value="Rock">Rock</option>
                     <option value="Hip-Hop">Hip-Hop</option>
@@ -40,7 +40,7 @@
         <tr>
             <td>
                 <form action="./save_contact.php" method="get">
-                    <input type="submit" name="submit!" value="Submit!" />
+                    <input type="submit" name="submit" value="Submit!" />
                 </form>
             </td>
         </tr>
