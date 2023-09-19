@@ -1,0 +1,36 @@
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', 'Arial', 'sans-serif';
+    background-color:whitesmoke;
+}
+h1, h2{
+    background-color: aliceblue;
+    color: rgb(148, 3, 221);
+}
+p {
+    background-color: aliceblue;
+    color: darkolivegreen;
+    border-style: inset;
+    border-color:seagreen ;
+}
+ul{
+    list-style-type: circle;
+    list-style-position: inside; 
+}
+img{
+    max-width: 250px;
+    min-width: none;
+    height: auto;
+    border-style: inset;
+    border-color: darkblue;
+    border-radius: 0100%;
+    border-width: 10cap;
+}
+a:link{
+    color: crimson;
+}
+a:hover{
+    color: cadetblue;
+}
+a:visited{
+    color:plum;
+}
