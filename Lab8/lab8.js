@@ -12,8 +12,8 @@ If the response is a string, change the text of the
 paragraph element with the id "responseString".
 */
 function getDataFromForm() {
-  var firstName = document.getElementById("fName").value;
-  var lastName = document.getElementById("lName").value;
+  var firstName = document.getElementById("fname").value;
+  var lastName = document.getElementById("lname").value;
 
   runAjax(firstName, lastName);
 
