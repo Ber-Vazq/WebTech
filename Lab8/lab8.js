@@ -30,4 +30,5 @@ function runAjax(fname, lname){
     }
   };
   xhr.send();
+  alert("done");
 }
