@@ -23,7 +23,7 @@ function getDataFromForm() {
 function runAjax(fname, lname){
   var xhr = new XMLHttpRequest();
 
-  xhr.open("GET", "./ajax.php?fname="+ fname + "&lname=" +lname, true);
+  xhr.open("GET", "./ajax.php?fname="+ fname + "&lname=" + lname, true);
   xhr.onreadystatechange = function(){
     if(xhr.readyState == 4 && xhr.status == 200){
       document.getElementById("responseString").innerText = xhr.responseText;
