@@ -12,5 +12,25 @@ If the response is a string, change the text of the
 paragraph element with the id "responseString".
 */
 function getDataFromForm() {
+  var firstName = document.getElementsByName("fName")[0];
+  var lastName = document.getElementsByName("lName")[0];
+
+  var firstName = firstNameInput.value;
+  var lastName = lastNameInput.value;
+
+  runAjax(firstName, lastName);
+
   alert("it worked!");
+}
+
+function runAjax(fname, lname){
+  var xhr = new XMLHttpRequest();
+
+  xhr.open("GET", "./ajax.php?firstName="+ fname + "&lastName=" +lname, true);
+  xhr.onreadystatechange = function(){
+    if(xhr.readyState == 4 && xhr.status == 200){
+      document.getElementById("responseString").innerText = xhr.responseText;
+    }
+  };
+  xhr.send();
 }
