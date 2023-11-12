@@ -1,5 +1,5 @@
 <?php 
-$file = fopen("../private/data.txt", "r");
+$file = fopen("data.txt", "r");
 $dataArray = [];
 while (($line = fgets($file)) !== false){
     $dataArray[] = explode(" ", trim($line));
