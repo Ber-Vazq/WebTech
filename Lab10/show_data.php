@@ -17,8 +17,8 @@ fclose($file);
         <h1>Data</h1>
         <table border="1">
             <tr>
-                <th>Favorite Song</th>
-                <th>Favorite Genre</th>
+                <th>First Name</th>
+                <th>Last Name</th>
             </tr>
             <?php foreach ($dataArray as $data): ?>
                 <tr>
